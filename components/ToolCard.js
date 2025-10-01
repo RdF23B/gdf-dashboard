@@ -8,7 +8,7 @@ export default function ToolCard({ title, imgSrc, link }) {
       width: '200px',
       margin: '10px'
     }}>
-      <img src={imgSrc} alt={title} style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+      <img src={imgSrc} alt={title} style={{width:'100px',height:'100px',objectFit:'contain'}} />
       <h3>{title}</h3>
       <a href={link} target='_blank' rel='noopener noreferrer'>Vai</a>
     </div>

@@ -5,14 +5,13 @@ export default function ChatBot() {
   const [input, setInput] = useState('');
 
   const sendMessage = async () => {
-    if (!input.trim()) return;
     const res = await fetch('/api/chat', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: input })
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({message: input})
     });
     const data = await res.json();
-    setChat([...chat, { user: input, bot: data.reply }]);
+    setChat([...chat, {user: input, bot: data.reply}]);
     setInput('');
   };
 
@@ -29,7 +28,7 @@ export default function ChatBot() {
       boxShadow: '0px 0px 10px rgba(0,0,0,0.2)'
     }}>
       <h3>ChatBot GDF</h3>
-      <div style={{ maxHeight: '200px', overflowY: 'auto' }}>
+      <div style={{maxHeight:'200px',overflowY:'auto'}}>
         {chat.map((c,i) => (
           <div key={i}>
             <b>Utente:</b> {c.user} <br />
