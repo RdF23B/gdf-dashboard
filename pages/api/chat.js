@@ -1,4 +1,5 @@
-// TODO: Backend chat logic
 export default function handler(req, res) {
-  res.status(200).json({ reply: 'Risposta di esempio dal chatbot' });
+  const { message } = req.body || {};
+  const reply = Risposta simulata per: \"\";
+  res.status(200).json({ reply });
 }

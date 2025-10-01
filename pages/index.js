@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div style={{padding:'20px'}}>
+      <div style={{ padding: '20px' }}>
         <h1>Cruscotto Operativo Guardia di Finanza</h1>
-        <div style={{display:'flex',flexWrap:'wrap'}}>
+        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
           <ToolCard title='ChatGPT' imgSrc='/img-chatgpt.png' link='https://chat.openai.com/'/>
           <ToolCard title='Bard AI' imgSrc='/img-bard.png' link='https://bard.google.com/'/>
           <ToolCard title='Claude' imgSrc='/img-claude.jpg' link='https://www.anthropic.com/'/>

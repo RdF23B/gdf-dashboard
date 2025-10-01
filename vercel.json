@@ -1,8 +1,9 @@
 {
+  ""version"": 2,
   ""builds"": [
-    { ""src"": ""pages/**/*.js"", ""use"": ""@vercel/node"" }
+    { ""src"": ""package.json"", ""use"": ""@vercel/next"" }
   ],
   ""routes"": [
-    { ""src"": ""/(.*)"", ""dest"": ""/pages/index.js"" }
+    { ""src"": ""/(.*)"", ""dest"": ""/"" }
   ]
 }
